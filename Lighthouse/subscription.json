@@ -4,6 +4,7 @@
     "parameters": {
         "mspOfferName": {
             "type": "string",
+            "defaultValue": "OPTI-Implementaciones",
             "metadata": {
                 "description": "OPTI-Servicios de administración"
             }
