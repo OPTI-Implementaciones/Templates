@@ -5,13 +5,13 @@
         "mspOfferName": {
             "type": "string",
             "metadata": {
-                "description": "Specify a unique name for your offer"
+                "description": "OPTI-Servicios de administración"
             }
         },
         "mspOfferDescription": {
             "type": "string",
             "metadata": {
-                "description": "Name of the Managed Service Provider offering"
+                "description": "Servicios de administración OPTI"
             }
         },
         "managedByTenantId": {
