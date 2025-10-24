@@ -11,6 +11,7 @@
         },
         "mspOfferDescription": {
             "type": "string",
+            "defaultValue": "Servicio de administración OPTI",
             "metadata": {
                 "description": "Servicios de administración OPTI"
             }
