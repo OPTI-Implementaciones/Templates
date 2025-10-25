@@ -11,6 +11,12 @@ Haz clic en el siguiente botón para desplegar la plantilla en tu suscripción d
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2Fsubscription.json)
 
 
+OPCION 2:
+
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2FSubscriptionLevel.json)
+
+
 ---
 
 ## ✅ Pasos para desplegar manualmente
