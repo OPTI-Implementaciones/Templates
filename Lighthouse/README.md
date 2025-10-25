@@ -17,7 +17,7 @@ OPCION 2:
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2FSubscriptionLevel.json)
 
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c89f0963-b492-4cca-9480-a5d697be43f8" />
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/c89f0963-b492-4cca-9480-a5d697be43f8" />
 
 
 ## ✅ Pasos para desplegar manualmente
