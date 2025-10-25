@@ -18,7 +18,7 @@
         },
         "managedByTenantId": {
             "type": "string",
-			"defaultValue": "33a89239-7f4e-4d42-bc97-fa22aead2040", //Tenant OPTI
+			"defaultValue": "33a89239-7f4e-4d42-bc97-fa22aead2040", "_comentario1": "Tenant ID de OPTI"
             "metadata": {
                 "description": "Specify the tenant id of the Managed Service Provider"
             }
