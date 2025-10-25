@@ -18,17 +18,17 @@
         },
         "managedByTenantId": {
             "type": "string",
-			"defaultValue": "33a89239-7f4e-4d42-bc97-fa22aead2040", "_comentario1": "Tenant ID de OPTI"
+			"defaultValue": "33a89239-7f4e-4d42-bc97-fa22aead2040",
             "metadata": {
-                "description": "Specify the tenant id of the Managed Service Provider"
+                "description": "Especificar el Tenant ID del Proveedor de servicios"
             }
         },
         "authorizations": {
             "type": "array",
 			"defaultValue": [
                 {
-					"principalId": "75c5de52-36c3-446d-8b41-4cfb90967584",
-                    "principalIdDisplayName": "MDR T3 - Threat Hunter",
+					"principalId": "d7d74fe8-3fc9-47d6-b4cb-9d8cc18e2eed",
+                    "principalIdDisplayName": "Admins",
                     "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade" 
                 },
 				{ 
@@ -78,7 +78,7 @@
                 }				
             ],
             "metadata": {
-                "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
+                "description": "Especifique un arreglo de objetos, en donde, se especifique el ID del objeto (usuario o grupo) que recibira los privilegios, el nombre (usuario o grupo) que recibira los privilegios y el id del rol de Azure"
             }
         }              
     },
