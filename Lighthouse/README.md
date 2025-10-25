@@ -18,7 +18,8 @@ OPCION 2:
 
 
 
----
+---<img width="46" height="66" alt="image" src="https://github.com/user-attachments/assets/2cfb1dab-f898-4566-a7f7-7b3543c0dbd8" />
+
 
 ## ✅ Pasos para desplegar manualmente
 
