@@ -14,7 +14,7 @@ Haz clic en el siguiente botón para desplegar la plantilla en tu suscripción d
 OPCION 2:
 
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://raw.githubusercontent.com/OPTI-Implementaciones/Templates/refs/heads/main/Lighthouse/SubscriptionLevel.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/OPTI-Implementaciones/Templates/refs/heads/main/Lighthouse/SubscriptionLevel.json)
 
 
 
