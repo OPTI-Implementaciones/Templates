@@ -6,18 +6,16 @@ Utiliza el botón **Deploy to Azure** para desplegar la configuración directame
 
 ## 🚀 Despliegue rápido
 
-Haz clic en el siguiente botón para desplegar la plantilla en tu suscripción de Azure:
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2Fsubscription.json)
+Haz clic en los siguientes botones para desplegar la plantilla en Azure:
 
 
-## ✅ Nivel de Suscripción:
-
+#### ✅ Nivel de Suscripción:
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2FSubscriptionLevel.json)
 
+#### 🧪 Nivel Grupo de recursos
 
-
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2FSubscriptionLevel.json)
 
 ## ✅ Pasos para desplegar manualmente
 
