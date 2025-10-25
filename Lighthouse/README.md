@@ -8,7 +8,7 @@ Utiliza el botón **Deploy to Azure** para desplegar la configuración directame
 
 Haz clic en el siguiente botón para desplegar la plantilla en tu suscripción de Azure:
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2FSubscriptionLevel.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOPTI-Implementaciones%2FTemplates%2Fmain%2FLighthouse%2Fsubscription.json)
 
 
 ---
