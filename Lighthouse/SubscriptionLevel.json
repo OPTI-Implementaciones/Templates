@@ -18,7 +18,7 @@
         },
         "managedByTenantId": {
             "type": "string",
-			"defaultValue": "33a89239-7f4e-4d42-bc97-fa22aead2040",
+			"defaultValue": "8cae48c0-cc54-4088-aeb9-5fac13b8ad3c",
             "metadata": {
                 "description": "Especificar el Tenant ID del Proveedor de servicios"
             }
@@ -27,18 +27,18 @@
             "type": "array",
 			"defaultValue": [
                 {
-					"principalId": "d7d74fe8-3fc9-47d6-b4cb-9d8cc18e2eed",
-                    "principalIdDisplayName": "Admins",
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858",
+                    "principalIdDisplayName": "LGH-CloudSec",
                     "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade" 
                 },
 				{ 
-					"principalId": "d7d74fe8-3fc9-47d6-b4cb-9d8cc18e2eed", 
-                    "principalIdDisplayName": "Admins",
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
 					"roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
                 },
 				{ 
-					"principalId": "d7d74fe8-3fc9-47d6-b4cb-9d8cc18e2eed", 
-                    "principalIdDisplayName": "Admins",
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
 					"roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
                 }
             ],
