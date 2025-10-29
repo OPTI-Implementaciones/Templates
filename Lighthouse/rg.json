@@ -4,29 +4,46 @@
     "parameters": {
         "mspOfferName": {
             "type": "string",
+            "defaultValue": "OPTI Sentinel Managed Services",
             "metadata": {
                 "description": "Specify a unique name for your offer"
             }
         },
         "mspOfferDescription": {
             "type": "string",
+            "defaultValue": "Servicios OPTI",
             "metadata": {
                 "description": "Name of the Managed Service Provider offering"
             }
         },
         "managedByTenantId": {
             "type": "string",
+            "defaultValue": "8cae48c0-cc54-4088-aeb9-5fac13b8ad3c",
             "metadata": {
-                "description": "Specify the tenant id of the Managed Service Provider"
+                "description": "Especificar el Tenant ID del Proveedor de servicios"
             }
         },
-        "authorizations": {
+       "authorizations": {
             "type": "array",
-            "metadata": {
-                "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
-            }
+			"defaultValue": [
+                {
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858",
+                    "principalIdDisplayName": "LGH-CloudSec",
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade" 
+                },
+				{ 
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
+					"roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
+                },
+				{ 
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
+					"roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+                }
         },
         "rgName": {
+            "defaultValue": "Reemplaza por el Nombre del Grupo de recursos",
             "type": "string"
         }              
     },
