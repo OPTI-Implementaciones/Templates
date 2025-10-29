@@ -40,7 +40,6 @@
 					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
                     "principalIdDisplayName": "LGH-CloudSec",
 					"roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
-                }
         },
         "rgName": {
             "defaultValue": "Reemplaza por el Nombre del Grupo de recursos",
