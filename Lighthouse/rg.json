@@ -42,8 +42,7 @@
         },
         "rgName": {
             "defaultValue": "Reemplaza por el Nombre del Grupo de recursos",
-            "type": "string"
-        }              
+            "type": "string"     
     },
     "variables": {
         "mspRegistrationName": "[guid(parameters('mspOfferName'))]",
