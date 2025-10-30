@@ -18,7 +18,7 @@
         },
         "managedByTenantId": {
             "type": "string",
-			"defaultValue": "8cae48c0-cc54-4088-aeb9-5fac13b8ad3c",
+			"defaultValue": "23285b8c-1596-4f14-adc2-fd472cc70cc8",
             "metadata": {
                 "description": "Especificar el Tenant ID del Proveedor de servicios"
             }
@@ -27,17 +27,17 @@
             "type": "array",
 			"defaultValue": [
                 {
-					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858",
+					"principalId": "285eb5d7-4a32-41f5-86df-2f79027a8cc3",
                     "principalIdDisplayName": "LGH-CloudSec",
                     "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade" 
                 },
 				{ 
-					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+					"principalId": "285eb5d7-4a32-41f5-86df-2f79027a8cc3", 
                     "principalIdDisplayName": "LGH-CloudSec",
 					"roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
                 },
 				{ 
-					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+					"principalId": "285eb5d7-4a32-41f5-86df-2f79027a8cc3", 
                     "principalIdDisplayName": "LGH-CloudSec",
 					"roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
                 }
