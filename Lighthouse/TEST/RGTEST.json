@@ -1,0 +1,100 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "type": "string",
+            "defaultValue": "OPTI Sentinel Managed Services",
+            "metadata": {
+                "description": "Specify a unique name for your offer"
+            }
+        },
+        "mspOfferDescription": {
+            "type": "string",
+            "defaultValue": "Servicios OPTI",
+            "metadata": {
+                "description": "Name of the Managed Service Provider offering"
+        },
+        "managedByTenantId": {
+            "type": "string",
+            "defaultValue": "8cae48c0-cc54-4088-aeb9-5fac13b8ad3c",
+            "metadata": {
+                "description": "Especificar el Tenant ID del Proveedor de servicios"
+            }
+        },
+       "authorizations": {
+            "type": "array",
+			"defaultValue": [
+                {
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858",
+                    "principalIdDisplayName": "LGH-CloudSec",
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade" 
+                },
+				{ 
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
+					"roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
+                },
+				{ 
+					"principalId": "f8e9cfa1-539e-4011-a686-c1f689d6b858", 
+                    "principalIdDisplayName": "LGH-CloudSec",
+					"roleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+        },
+        "rgName": {
+            "defaultValue": "Reemplaza por el Nombre del Grupo de recursos",
+            "type": "string"     
+    },
+    "variables": {
+        "mspRegistrationName": "[guid(parameters('mspOfferName'))]",
+        "mspAssignmentName": "[guid(parameters('mspOfferName'))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.ManagedServices/registrationDefinitions",
+            "apiVersion": "2019-06-01",
+            "name": "[variables('mspRegistrationName')]",
+            "properties": {
+                "registrationDefinitionName": "[parameters('mspOfferName')]",
+                "description": "[parameters('mspOfferDescription')]",
+                "managedByTenantId": "[parameters('managedByTenantId')]",
+                "authorizations": "[parameters('authorizations')]"
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "rgAssignment",
+            "resourceGroup": "[parameters('rgName')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+            ],
+            "properties":{
+                "mode":"Incremental",
+                "template":{
+                    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {},
+                    "resources": [
+                        {
+                            "type": "Microsoft.ManagedServices/registrationAssignments",
+                            "apiVersion": "2019-06-01",
+                            "name": "[variables('mspAssignmentName')]",
+                            "properties": {
+                                "registrationDefinitionId": "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "outputs": {
+        "mspOfferName": {
+            "type": "string",
+            "value": "[concat('Managed by', ' ', parameters('mspOfferName'))]"
+        },
+        "authorizations": {
+            "type": "array",
+            "value": "[parameters('authorizations')]"
+        }
+    }
